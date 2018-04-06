@@ -1,0 +1,20 @@
+name:                github-search-to-rss
+version:             0.1.0.0
+synopsis:            Converts GitHub search results into an RSS feed (actually Atom).
+#description:
+homepage:            https://github.com/Minoru/github-search-to-rss#readme
+license:             BSD3
+author:              Alexander Batischev
+maintainer:          Alexander Batischev <eual.jp@gmail.com>
+copyright:           2018 Alexander Batischev
+category:            Web
+extra-source-files:
+- README.md
+
+dependencies:
+  - base >= 4.7 && < 5
+
+executables:
+  github-search-to-rss:
+    source-dirs:      src
+    main:             Main.hs
