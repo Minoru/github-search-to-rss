@@ -3,8 +3,10 @@
 module Main where
 
 import Args (Options(..), getArgs)
+import Search (search)
 
 main :: IO ()
 main = do
   opts <- getArgs
-  putStrLn $ show $ query opts
+  results <- search $ query opts
+  print results
