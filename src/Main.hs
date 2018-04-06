@@ -1,5 +1,10 @@
+{-# LANGUAGE OverloadedStrings #-}
+
 module Main where
+
+import Args (Options(..), getArgs)
 
 main :: IO ()
 main = do
-  putStrLn "hello world"
+  opts <- getArgs
+  putStrLn $ show $ query opts

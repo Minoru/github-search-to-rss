@@ -13,6 +13,8 @@ extra-source-files:
 
 dependencies:
   - base >= 4.7 && < 5
+  - optparse-applicative
+  - text
 
 executables:
   github-search-to-rss:
