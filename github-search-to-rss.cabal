@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b922cf1990ce434d02930340a5076fffd37d68250c914886d3da6ec1d408946d
+-- hash: ad8fe10b2e4e6fe774586d0e2ca711cc9507aebe6bc3134e86c3db6565d89743
 
 name:           github-search-to-rss
 version:        0.1.0.0
@@ -24,13 +24,19 @@ executable github-search-to-rss
   main-is: Main.hs
   other-modules:
       Args
+      Feed
       Search
       Paths_github_search_to_rss
   hs-source-dirs:
       src
   build-depends:
       base >=4.7 && <5
+    , feed
     , github
     , optparse-applicative
     , text
+    , time
+    , timerep
+    , xml-conduit
+    , xml-types
   default-language: Haskell2010

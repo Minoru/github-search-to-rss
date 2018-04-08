@@ -16,6 +16,11 @@ dependencies:
   - github
   - optparse-applicative
   - text
+  - feed
+  - timerep
+  - time
+  - xml-conduit
+  - xml-types
 
 executables:
   github-search-to-rss:
