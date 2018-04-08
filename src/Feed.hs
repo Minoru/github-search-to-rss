@@ -45,7 +45,11 @@ issueToAtomEntry tz issue = entry
     content = Atom.TextContent $ fromMaybe T.empty (issueBody issue)
 
     entry :: Atom.Entry
-    entry = basicEntry { Atom.entryContent = Just content }
+    entry = basicEntry
+      {
+        Atom.entryContent = Just content
+      , Atom.entryLinks = [ Atom.nullLink uri ]
+      }
 
 createFeed :: T.Text -> [Atom.Entry] -> Atom.Feed
 createFeed query entries = feed
