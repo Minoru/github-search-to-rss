@@ -1,3 +1,3 @@
 # github-search-to-rss
 
-Converts GitHub search results into an RSS feed (actually Atom).
+Converts results of GitHub issues search into an RSS feed (actually Atom).

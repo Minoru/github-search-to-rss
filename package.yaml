@@ -1,6 +1,6 @@
 name:                github-search-to-rss
 version:             0.1.0.0
-synopsis:            Converts GitHub search results into an RSS feed (actually Atom).
+synopsis:            Converts results of GitHub issues search into an RSS feed (actually Atom).
 #description:
 homepage:            https://github.com/Minoru/github-search-to-rss#readme
 license:             BSD3
