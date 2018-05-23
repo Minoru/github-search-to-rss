@@ -2,11 +2,11 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: ad8fe10b2e4e6fe774586d0e2ca711cc9507aebe6bc3134e86c3db6565d89743
+-- hash: e371b88e9cd54a6d83eedf9885dab1674376614ca1ee516e0f8d4dfbdb96e9fb
 
 name:           github-search-to-rss
 version:        0.1.0.0
-synopsis:       Converts GitHub search results into an RSS feed (actually Atom).
+synopsis:       Converts results of GitHub issues search into an RSS feed (actually Atom).
 category:       Web
 homepage:       https://github.com/Minoru/github-search-to-rss#readme
 author:         Alexander Batischev
