@@ -1,8 +1,10 @@
--- This file has been generated from package.yaml by hpack version 0.21.2.
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e371b88e9cd54a6d83eedf9885dab1674376614ca1ee516e0f8d4dfbdb96e9fb
+-- hash: 9eea1da8c591f5bde9b0017c93dc5cffeccaf78f09702b887b11a390385cda0e
 
 name:           github-search-to-rss
 version:        0.1.0.0
@@ -15,8 +17,6 @@ copyright:      2018 Alexander Batischev
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
-cabal-version:  >= 1.10
-
 extra-source-files:
     README.md
 
