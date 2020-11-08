@@ -7,7 +7,7 @@ reader][newsboat-exec]. Put `github-search-to-rss` binary into `~/.bin`, and add
 the following to your `urls` file:
 
 ```
-"exec:~/.bin/github-search-to-rss whatever interests you"
+"exec:~/.bin/github-search-to-rss -- whatever interests you"
 ```
 
 [newsboat-exec]: https://newsboat.org/releases/2.11.1/docs/newsboat.html#_scripts_and_filters_snownews_extensions
