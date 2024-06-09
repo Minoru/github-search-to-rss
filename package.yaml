@@ -21,6 +21,7 @@ dependencies:
   - time
   - xml-conduit
   - xml-types
+  - vector
 
 executables:
   github-search-to-rss:

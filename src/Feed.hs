@@ -4,11 +4,12 @@ module Feed (
   toAtomFeed
   ) where
 
-import GitHub.Data (SearchResult(searchResultResults), Issue(..), getUrl)
+import GitHub.Data (SearchResult, Issue(..), getUrl)
 import Data.Maybe (fromMaybe)
-import Data.Foldable (toList)
+import Data.Foldable (foldMap)
 import Data.Time.RFC3339 (formatTimeRFC3339)
 import Data.Time.LocalTime (TimeZone, utcToZonedTime)
+import Data.Vector (toList)
 import Text.XML (def, renderText)
 import Data.XML.Types as XML
 import Text.XML as XMLC
@@ -20,7 +21,7 @@ import qualified Data.Text.Lazy as TL
 toAtomFeed :: TimeZone -> T.Text -> SearchResult Issue -> T.Text
 toAtomFeed tz query results =
   let
-    entries = toList $ searchResultResults results
+    entries = foldMap toList results
     atomEntries = map (issueToAtomEntry tz) entries
   in fromMaybe T.empty (renderFeed $ createFeed query atomEntries)
 
